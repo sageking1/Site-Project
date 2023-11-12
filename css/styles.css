@@ -1,0 +1,90 @@
+
+.header_h1 {
+    color: red;
+}
+
+.container {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.list_ref{
+    display: list-item;
+    list-style-type: "🤯  ";
+    padding-inline-start: 40px;
+}
+
+
+/* This breakpoint is established for small dimension screens - mobile devices, small tablets, etc. 
+I chose this query as a 'mobile first' development decision. */
+@media (max-width: 767px) {
+   /* Centered the top header to make mobile device view a bit more succint. 
+   Also increased width and padding to make it look claener.*/
+    .header_h1 {
+        width: 50%;
+        text-align: center;
+        padding-left: 25%;
+    }
+
+    /* Increased width, aligned to the center, added padding and removed the bullet images all to make the list items more 
+    more clickable from smaller device views. --> Created a class object for the 'ul' tag so these changes only apply to 
+    this specific page element. */
+    .list_ref {
+        width: 50%;
+        text-align: center;
+        padding-left: 25%;
+        list-style-type: none;
+    }
+}
+
+/* This breakpoint is established for medium dimension screens - small to large laptop screens, etc. 
+This query will be used to optimize my site for laptop users with screen sizes in this range. */
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+    /* Aligned the list items horizontally and added more spacing between them for touchscreen clickability. 
+    Also added centered them on screen to look cleaner. */
+    li {
+        display: inline-block;
+        margin-right: 5%;
+        text-align: center;
+        padding-left: 10%;
+    }
+
+    /* Moved headers to center for cleaner look and also transformed lettering to all caps to improve readability and flow. */
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+/* This breakpoint is established for large dimension screens - monitors and larger TV screens.
+I chose this breakpoint for anything larger than a standard laptop screen. */
+@media (min-width: 1024px) {
+    
+    /* Combined articles into class object. Used multicol to separate articles into more readable columns. */
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        column-width: 10%;
+        column-gap: 2em;
+        column-count: auto;
+        text-align: left;
+    }
+
+    /* Made everything bigger for readability and centered the title and ul to make it look cleaner. */
+    body { 
+        font-size: 200%;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 2%;
+        text-align: center;
+        padding-left: 5%;
+        list-style-type: none;
+    }
+}
