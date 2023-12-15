@@ -17,13 +17,14 @@
     align-items: left;
     padding: 0;
     background-color: gray;
+    margin-right: auto;
 }
 
 .navigation_bar ul{
     list-style: none;
     display: flex;
-    padding: 10px;
-    margin: 5px;
+    padding: 5px;
+    margin: auto;
     font-family: 'Courier New', Courier, monospace;
 }
 

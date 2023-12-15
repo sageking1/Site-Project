@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- this is the beginning of my HTML file-->
+<head class="breakpoint1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+
+<body>
+    <header>
+        <h1 class="header_h1">Contact</h1>
+        <nav class="navigation_bar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="">Examples</a>
+                </li>
+                <li>
+                    <a href="week7.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Writing my CSS inline here since it'll be exclusive to the Contact form page. -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0a94e;
+            padding: 20px;
+        }
+        .radio-group {
+            display: flex;
+            justify-content: start;
+            gap: 20px;
+            margin-bottom: 10px;
+        }
+        .radio-group label, .radio-group input {
+            display: inline-block;
+            width: auto;
+            margin-bottom: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        label, input, select, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #a04293;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+
+        <div class="container">
+            <h1>Contact Form</h1>
+            <form action="/submit-contact-info" method="post">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="address">Address *</label>
+                <input type="text" id="address" name="address" required>
+    
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+    
+                <label for="inquiry-type">Inquiry Type</label>
+                <select id="inquiry-type" name="inquiry_type">
+                    <option value="pork chops">Pork Chops</option>
+                    <option value="dalmation">Dalmatian</option>
+                    <option value="yellow">Yellow</option>
+                </select>
+    
+                <label>Contact Preference</label>
+                <div class="radio-group">
+                    <input type="radio" id="email_contact" name="contact_preference" value="email" checked>
+                    <label for="email_contact">Email</label>
+                    <input type="radio" id="phone_contact" name="contact_preference" value="phone">
+                    <label for="phone_contact">Phone</label>
+                </div>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+<main>
+    <article class="container">
+        <h2>First Header</h2>
+        <p>Maecenas quis odio sit amet ipsum maximus egestas. Maecenas gravida magna vehicula quam pulvinar varius. Vestibulum venenatis quam enim, a eleifend tortor blandit non. </p>
+    </article>
+
+    <article class="container">
+        <h2>Second Header</h2>
+        <p>Maecenas quis odio sit amet ipsum maximus egestas. Maecenas gravida magna vehicula quam pulvinar varius. Vestibulum venenatis quam enim, a eleifend tortor blandit non. </p>
+        <p>Copyright Footer 2023</p>
+    </article>
+
+
+    </body>
+    <footer>
+        <p>This is the Site's Footer</p>
+    </footer>
+</main>
+
+
+<!-- this is the end of my HTML file-->
+
+
+</html>
